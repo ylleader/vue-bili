@@ -1,0 +1,121 @@
+:root {
+    --min-header-top: 60px;
+    --layout-padding: 64px;
+}
+
+
+@font-face {
+    font-family: "PingFang SC";
+    src: url("@/assets/font/PingFangSC.woff2") format("woff2"), url("@/assets/font/PingFangSC.woff") format("woff"), url("@/assets/font/PingFangSC.ttf");
+    font-display: swap;
+}
+
+
+
+@media (max-width: 1366.99px) {
+    :root {
+        --layout-padding: 56px;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1700.9px) {
+    :root {
+        --layout-padding: 64px;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'PingFang SC', Helvetica, sans-serif, Arial;
+
+    /* overflow: auto;
+    overflow: overlay; */
+}
+
+
+/* html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: #c9caca;
+    border-radius: 8px;
+} */
+
+.overflow-hidden {
+    overflow: hidden;
+    /* margin-right: 8px; */
+}
+
+
+/* 隐藏页面滚动条 */
+
+/* body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-y: auto;
+}
+body::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+} */
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    background-color: white;
+    font-family: 'PingFang SC', Helvetica, sans-serif, Arial;
+}
+
+textarea,
+input {
+    font-family: 'PingFang SC', Helvetica, sans-serif, Arial;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #9499A0;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+#app {
+    min-height: 100vh;
+    min-width: 1100px;
+    max-width: 2560px;
+}
+
+
+.min-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.min-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(193, 193, 193);
+    border-radius: 4px;
+}
+
+.symbol-icon {
+    /* width: 1em;
+    height: 1em; */
+    /* vertical-align: -0.15em;
+    fill: currentColor; */
+    /* overflow: hidden; */
+}
